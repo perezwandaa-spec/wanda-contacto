@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Lic. Pérez Wanda — International Trade & Global Sourcing Specialist</title>
+<meta name="description" content="Contacto de Lic. Pérez Wanda, International Trade & Global Sourcing Specialist.">
+<meta name="theme-color" content="#F1E9DA">
+
+<!-- =========================================================
+     DATOS DE CONTACTO — editar solo aquí para actualizar la página
+     ========================================================= -->
+<script>
+  window.CONTACT = {
+    name: "LIC. PÉREZ WANDA",
+    title: "International Trade & Global Sourcing Specialist",
+    whatsappUrl: "https://wa.me/5491149289218",
+    email: "wperezcomex@gmail.com",
+    wechatId: "wperezcomex1",
+    vcardFile: "wanda-perez.vcf",
+    // Para agregar el QR personal de WeChat más adelante:
+    // 1) subir la imagen a assets/wechat-qr.png
+    // 2) cambiar wechatQr a true
+    wechatQr: false,
+    wechatQrImage: "assets/wechat-qr.png",
+
+    // ---- Botones preparados para activar más adelante ----
+    // Para activar LinkedIn: poner enabled:true y pegar la URL del perfil.
+    linkedin: {
+      enabled: false,
+      url: ""
+    },
+    // Para activar la web personal: poner enabled:true y pegar la URL.
+    website: {
+      enabled: false,
+      url: "",
+      label: "Website"
+    }
+  };
+</script>
+
+<style>
+  :root{
+    --cream:      #F1E9DA;
+    --cream-2:    #EAE0CD;
+    --ink:        #262220;
+    --ink-soft:   #55504B;
+    --maroon:     #6E1423;
+    --maroon-tint:rgba(110,20,35,0.08);
+    --maroon-tint-strong: rgba(110,20,35,0.14);
+    --line:       rgba(38,34,32,0.14);
+    --line-strong:rgba(38,34,32,0.28);
+    --radius: 2px;
+  }
+
+  *{ box-sizing:border-box; }
+  html,body{ margin:0; padding:0; }
+
+  body{
+    background:var(--cream);
+    color:var(--ink);
+    font-family:"Helvetica Neue", -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+    -webkit-font-smoothing:antialiased;
+    min-height:100vh;
+    min-height:100dvh;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    padding:32px 22px 44px;
+  }
+
+  @media (prefers-reduced-motion:no-preference){
+    .card{ animation:rise .5s cubic-bezier(.2,.7,.2,1) both; }
+    .row{ animation:rise .5s cubic-bezier(.2,.7,.2,1) both; }
+    .row:nth-of-type(1){ animation-delay:.05s; }
+    .row:nth-of-type(2){ animation-delay:.1s; }
+    .row:nth-of-type(3){ animation-delay:.15s; }
+    .row:nth-of-type(4){ animation-delay:.2s; }
+    @keyframes rise{ from{ opacity:0; transform:translateY(8px);} to{ opacity:1; transform:translateY(0);} }
+  }
+
+  .card{
+    width:100%;
+    max-width:400px;
+  }
+
+  /* ---------- header ---------- */
+  .eyebrow{
+    text-align:center;
+    font-size:11px;
+    letter-spacing:.24em;
+    color:var(--maroon);
+    text-transform:uppercase;
+    margin-bottom:10px;
+    font-weight:600;
+  }
+
+  h1{
+    margin:0;
+    text-align:center;
+    font-size:clamp(24px, 6.5vw, 30px);
+    font-weight:700;
+    letter-spacing:.045em;
+    line-height:1.15;
+  }
+
+  .subtitle{
+    text-align:center;
+    margin:10px auto 0;
+    max-width:300px;
+    font-size:14.5px;
+    line-height:1.5;
+    color:var(--ink-soft);
+    letter-spacing:.01em;
+  }
+
+  /* ---------- signature wave divider ---------- */
+  .divider{
+    width:100%;
+    height:22px;
+    margin:26px 0 30px;
+    display:block;
+  }
+  .divider path{
+    fill:none;
+    stroke:var(--maroon);
+    stroke-width:1.1;
+    opacity:.55;
+  }
+  .divider circle{
+    fill:var(--maroon);
+    opacity:.9;
+  }
+
+  /* ---------- action rows ---------- */
+  .actions{
+    border-top:1px solid var(--line-strong);
+  }
+
+  .row{
+    display:flex;
+    align-items:center;
+    gap:14px;
+    width:100%;
+    padding:16px 4px;
+    border-bottom:1px solid var(--line-strong);
+    background:transparent;
+    border-left:none;
+    border-right:none;
+    border-top:none;
+    text-align:left;
+    font-family:inherit;
+    color:var(--ink);
+    text-decoration:none;
+    cursor:pointer;
+    -webkit-tap-highlight-color:transparent;
+    transition:background-color .18s ease;
+  }
+  .row:active{ background:var(--maroon-tint-strong); }
+  @media (hover:hover){
+    .row:hover{ background:var(--maroon-tint); }
+  }
+
+  .row .icon{
+    flex:0 0 auto;
+    width:20px; height:20px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:var(--maroon);
+  }
+  .row .icon svg{ width:19px; height:19px; }
+
+  .row .label-group{ flex:1 1 auto; min-width:0; }
+  .row .label{
+    font-size:15.5px;
+    font-weight:600;
+    letter-spacing:.01em;
+  }
+  .row .sub{
+    font-size:12.5px;
+    color:var(--ink-soft);
+    margin-top:2px;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+  }
+
+  .row .chevron{
+    flex:0 0 auto;
+    color:var(--line-strong);
+    display:flex;
+  }
+  .row .chevron svg{ width:14px; height:14px; }
+
+  /* ---------- WeChat expandable panel ---------- */
+  .wechat-panel{
+    max-height:0;
+    overflow:hidden;
+    transition:max-height .28s ease;
+  }
+  .wechat-panel.open{ max-height:260px; }
+
+  .wechat-inner{
+    padding:2px 4px 20px 38px;
+    border-bottom:1px solid var(--line-strong);
+  }
+
+  .wechat-id-box{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:10px;
+    background:var(--cream-2);
+    border:1px solid var(--line);
+    border-radius:var(--radius);
+    padding:10px 12px;
+    margin-top:8px;
+  }
+  .wechat-id-box span{
+    font-size:14px;
+    letter-spacing:.02em;
+    font-weight:600;
+  }
+  .copy-btn{
+    flex:0 0 auto;
+    background:var(--maroon);
+    color:var(--cream);
+    border:none;
+    font-family:inherit;
+    font-size:11.5px;
+    font-weight:700;
+    letter-spacing:.06em;
+    text-transform:uppercase;
+    padding:8px 12px;
+    border-radius:var(--radius);
+    cursor:pointer;
+    transition:opacity .15s ease;
+  }
+  .copy-btn:active{ opacity:.75; }
+  .copy-btn.copied{ background:var(--ink); }
+
+  .wechat-hint{
+    margin-top:10px;
+    font-size:12px;
+    color:var(--ink-soft);
+    line-height:1.5;
+  }
+
+  .wechat-qr-wrap{
+    margin-top:14px;
+    text-align:center;
+  }
+  .wechat-qr-wrap img{
+    width:150px;
+    height:150px;
+    border:1px solid var(--line-strong);
+    padding:6px;
+    background:#fff;
+  }
+
+  /* ---------- footer ---------- */
+  footer{
+    margin-top:34px;
+    text-align:center;
+  }
+  footer .rule{
+    width:34px;
+    height:1px;
+    background:var(--line-strong);
+    margin:0 auto 12px;
+  }
+  footer p{
+    margin:0;
+    font-size:10.5px;
+    letter-spacing:.12em;
+    text-transform:uppercase;
+    color:var(--ink-soft);
+    opacity:.7;
+  }
+
+  :focus-visible{
+    outline:2px solid var(--maroon);
+    outline-offset:2px;
+  }
+</style>
+</head>
+<body>
+
+<div class="card">
+
+  <p class="eyebrow">Comercio Internacional</p>
+  <h1 id="c-name"></h1>
+  <p class="subtitle" id="c-title"></p>
+
+  <svg class="divider" viewBox="0 0 400 22" preserveAspectRatio="none" aria-hidden="true">
+    <path d="M0,11 C60,2 90,20 150,11 C210,2 240,20 300,11 C340,4 370,14 400,9"/>
+    <circle cx="200" cy="11" r="2.4"/>
+  </svg>
+
+  <div class="actions" role="group" aria-label="Opciones de contacto">
+
+    <!-- WhatsApp -->
+    <a class="row" id="row-whatsapp" href="#" target="_blank" rel="noopener">
+      <span class="icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+          <path d="M12 2.5a9.5 9.5 0 0 0-8.2 14.3L2.5 21.5l4.9-1.3A9.5 9.5 0 1 0 12 2.5z"/>
+          <path d="M8.3 8.6c.2-.5.4-.5.7-.5h.5c.2 0 .4 0 .6.4.2.5.7 1.6.7 1.7.1.1.1.3 0 .4-.1.2-.1.3-.3.4-.1.2-.3.3-.4.5-.1.1-.3.3-.1.6.2.4.8 1.3 1.8 2.1 1.2 1 2.2 1.4 2.6 1.5.3.1.5.1.6-.1.2-.2.7-.8.9-1 .2-.3.4-.2.6-.1l1.6.8c.2.1.4.2.4.3.1.2.1.9-.2 1.4-.3.5-1.4 1.1-2 1.1-.5 0-1.2 0-3.6-1.1-3-1.4-4.8-4.5-5-4.7-.1-.2-1.2-1.6-1.2-3.1 0-1.5.8-2.2 1-2.5z"/>
+        </svg>
+      </span>
+      <span class="label-group">
+        <span class="label">WhatsApp</span>
+        <span class="sub">Iniciar conversación</span>
+      </span>
+      <span class="chevron" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 6l6 6-6 6"/></svg>
+      </span>
+    </a>
+
+    <!-- WeChat -->
+    <button class="row" id="row-wechat" type="button" aria-expanded="false" aria-controls="wechat-panel">
+      <span class="icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+          <path d="M9 4.5C5 4.5 2 7.1 2 10.3c0 1.8 1 3.4 2.6 4.5l-.6 2 2.2-1.1c.7.2 1.2.3 1.9.3h.5"/>
+          <path d="M15.5 9.5c-3.3 0-6 2.2-6 5s2.7 5 6 5c.6 0 1.1-.1 1.6-.2l1.9 1-.5-1.8C19.7 17.4 21 15.9 21 14c0-2.8-2.7-4.5-5.5-4.5z"/>
+          <circle cx="6.5" cy="9.2" r=".9" fill="currentColor" stroke="none"/>
+          <circle cx="10.5" cy="9.2" r=".9" fill="currentColor" stroke="none"/>
+        </svg>
+      </span>
+      <span class="label-group">
+        <span class="label">WeChat</span>
+        <span class="sub" id="c-wechat-sub"></span>
+      </span>
+      <span class="chevron" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 6l6 6-6 6"/></svg>
+      </span>
+    </button>
+
+    <div class="wechat-panel" id="wechat-panel">
+      <div class="wechat-inner">
+        <div class="wechat-id-box">
+          <span id="wechat-id-text"></span>
+          <button class="copy-btn" id="copy-btn" type="button">Copy ID</button>
+        </div>
+        <p class="wechat-hint">No existe un enlace universal para abrir un chat de WeChat desde la web. Copiá el ID y buscalo dentro de la app.</p>
+        <div class="wechat-qr-wrap" id="wechat-qr-wrap" hidden>
+          <img id="wechat-qr-img" alt="Código QR de WeChat">
+        </div>
+      </div>
+    </div>
+
+    <!-- Email -->
+    <a class="row" id="row-email" href="#">
+      <span class="icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+          <rect x="3" y="5" width="18" height="14" rx="1"/>
+          <path d="M3.5 6.5 12 13l8.5-6.5"/>
+        </svg>
+      </span>
+      <span class="label-group">
+        <span class="label">Email</span>
+        <span class="sub" id="c-email-sub"></span>
+      </span>
+      <span class="chevron" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 6l6 6-6 6"/></svg>
+      </span>
+    </a>
+
+    <!-- Save Contact -->
+    <a class="row" id="row-vcard" href="#">
+      <span class="icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+          <rect x="4" y="3.5" width="16" height="17" rx="1.2"/>
+          <circle cx="12" cy="9.5" r="2.4"/>
+          <path d="M7.5 17c.8-2 2.4-3 4.5-3s3.7 1 4.5 3"/>
+        </svg>
+      </span>
+      <span class="label-group">
+        <span class="label">Save Contact</span>
+        <span class="sub">Agregar a mis contactos</span>
+      </span>
+      <span class="chevron" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 6l6 6-6 6"/></svg>
+      </span>
+    </a>
+
+    <!-- LinkedIn (oculto hasta activar en CONTACT.linkedin.enabled) -->
+    <a class="row" id="row-linkedin" href="#" target="_blank" rel="noopener" hidden>
+      <span class="icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+          <rect x="3" y="3" width="18" height="18" rx="1.5"/>
+          <line x1="7.5" y1="10" x2="7.5" y2="16.5"/>
+          <circle cx="7.5" cy="7" r=".2" fill="currentColor"/>
+          <path d="M11 16.5V12c0-1.1.9-2 2-2s2 .9 2 2v4.5"/>
+          <line x1="11" y1="10.3" x2="11" y2="16.5"/>
+        </svg>
+      </span>
+      <span class="label-group">
+        <span class="label">LinkedIn</span>
+        <span class="sub">Ver perfil profesional</span>
+      </span>
+      <span class="chevron" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 6l6 6-6 6"/></svg>
+      </span>
+    </a>
+
+    <!-- Website (oculto hasta activar en CONTACT.website.enabled) -->
+    <a class="row" id="row-website" href="#" target="_blank" rel="noopener" hidden>
+      <span class="icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+          <circle cx="12" cy="12" r="9"/>
+          <path d="M3 12h18M12 3c2.5 2.6 3.8 5.8 3.8 9s-1.3 6.4-3.8 9c-2.5-2.6-3.8-5.8-3.8-9S9.5 5.6 12 3z"/>
+        </svg>
+      </span>
+      <span class="label-group">
+        <span class="label" id="c-website-label">Website</span>
+        <span class="sub">Visitar sitio</span>
+      </span>
+      <span class="chevron" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 6l6 6-6 6"/></svg>
+      </span>
+    </a>
+
+  </div>
+
+  <footer>
+    <div class="rule"></div>
+    <p>Global Sourcing · Comercio Exterior</p>
+  </footer>
+
+</div>
+
+<script>
+(function(){
+  var C = window.CONTACT;
+
+  document.getElementById('c-name').textContent = C.name;
+  document.getElementById('c-title').textContent = C.title;
+
+  var waRow = document.getElementById('row-whatsapp');
+  waRow.href = C.whatsappUrl;
+
+  var emailRow = document.getElementById('row-email');
+  emailRow.href = 'mailto:' + C.email;
+  document.getElementById('c-email-sub').textContent = C.email;
+
+  var vcardRow = document.getElementById('row-vcard');
+  vcardRow.href = C.vcardFile;
+
+  document.getElementById('c-wechat-sub').textContent = 'ID: ' + C.wechatId;
+  document.getElementById('wechat-id-text').textContent = C.wechatId;
+
+  if (C.wechatQr) {
+    var img = document.getElementById('wechat-qr-img');
+    img.src = C.wechatQrImage;
+    document.getElementById('wechat-qr-wrap').hidden = false;
+  }
+
+  if (C.linkedin && C.linkedin.enabled && C.linkedin.url) {
+    var liRow = document.getElementById('row-linkedin');
+    liRow.href = C.linkedin.url;
+    liRow.hidden = false;
+  }
+
+  if (C.website && C.website.enabled && C.website.url) {
+    var webRow = document.getElementById('row-website');
+    webRow.href = C.website.url;
+    webRow.hidden = false;
+    if (C.website.label) document.getElementById('c-website-label').textContent = C.website.label;
+  }
+
+  // WeChat expandable panel
+  var wechatBtn = document.getElementById('row-wechat');
+  var panel = document.getElementById('wechat-panel');
+  wechatBtn.addEventListener('click', function(){
+    var isOpen = panel.classList.toggle('open');
+    wechatBtn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+  });
+
+  // Copy WeChat ID
+  var copyBtn = document.getElementById('copy-btn');
+  copyBtn.addEventListener('click', function(){
+    var text = C.wechatId;
+    var done = function(){
+      copyBtn.textContent = 'Copied';
+      copyBtn.classList.add('copied');
+      setTimeout(function(){
+        copyBtn.textContent = 'Copy ID';
+        copyBtn.classList.remove('copied');
+      }, 1600);
+    };
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(text).then(done).catch(function(){ fallbackCopy(text, done); });
+    } else {
+      fallbackCopy(text, done);
+    }
+  });
+
+  function fallbackCopy(text, done){
+    var ta = document.createElement('textarea');
+    ta.value = text;
+    ta.style.position = 'fixed';
+    ta.style.opacity = '0';
+    document.body.appendChild(ta);
+    ta.select();
+    try { document.execCommand('copy'); } catch(e){}
+    document.body.removeChild(ta);
+    done();
+  }
+})();
+</script>
+
+</body>
+</html>
