@@ -315,7 +315,8 @@ footer p {
 
 /* ===== Sobre mí (desplegable) ===== */
 .about-panel{display:grid;grid-template-rows:0fr;transition:grid-template-rows .35s ease}
-.about-panel.open{grid-template-rows:1fr;border-bottom:1px solid var(--border)}
+.about-panel.open{grid-template-rows:1fr}
+#aboutToggle[aria-expanded="false"]{border-bottom:none}
 .about-panel > .about-inner{overflow:hidden}
 .about-body{padding:4px 22px 22px 76px;text-align:left}
 .about-body p{font-size:14.5px;line-height:1.65;color:var(--gray);margin:6px 0 10px}
@@ -491,24 +492,6 @@ footer p {
     <div class="arrow">›</div>
 
 </a>
-        <!-- Sobre mí -->
-        <button class="action" type="button" id="aboutToggle" aria-expanded="false" aria-controls="aboutPanel" onclick="toggleAbout()">
-            <div class="icon">
-                <svg viewBox="0 0 32 32"><circle cx="16" cy="11" r="5"></circle><path d="M6.5 27c1.6-5.5 17.4-5.5 19 0"></path></svg>
-            </div>
-            <div class="action-content">
-                <div class="action-title">Sobre mí</div>
-                <div class="action-detail">Trayectoria y formación</div>
-            </div>
-            <div class="arrow">›</div>
-        </button>
-        <div class="about-panel" id="aboutPanel" role="region" aria-labelledby="aboutToggle">
-            <div class="about-inner"><div class="about-body">
-                <p>Soy Licenciada en Comercio Internacional (Universidad Nacional de Quilmes) y trabajo hace más de 15 años en comercio exterior, procurement y sourcing entre Asia, Estados Unidos y América Latina.</p>
-                <p>Complementé mi formación con la Diplomatura en Economía Política (UBA · CEPA) y el programa Experto en Project Management (UTN). En 2026 cursé un programa internacional de Administración de Negocios en la Zhongnan University of Economics and Law, en Wuhan, China, con visitas a empresas locales.</p>
-                <p class="langs">Me manejo en español e inglés, y tengo nociones de portugués y mandarín.</p>
-            </div></div>
-        </div>
         <!-- WhatsApp -->
         <a
             class="action"
@@ -603,6 +586,24 @@ footer p {
             <div class="arrow">›</div>
 
         </button>
+        <!-- Sobre mí -->
+        <button class="action" type="button" id="aboutToggle" aria-expanded="false" aria-controls="aboutPanel" onclick="toggleAbout()">
+            <div class="icon">
+                <svg viewBox="0 0 32 32"><circle cx="16" cy="11" r="5"></circle><path d="M6.5 27c1.6-5.5 17.4-5.5 19 0"></path></svg>
+            </div>
+            <div class="action-content">
+                <div class="action-title">Sobre mí</div>
+                <div class="action-detail">Trayectoria y formación</div>
+            </div>
+            <div class="arrow">›</div>
+        </button>
+        <div class="about-panel" id="aboutPanel" role="region" aria-labelledby="aboutToggle">
+            <div class="about-inner"><div class="about-body">
+                <p>Soy Licenciada en Comercio Internacional (Universidad Nacional de Quilmes) y trabajo hace más de 15 años en comercio exterior, procurement y sourcing entre Asia, Estados Unidos y América Latina.</p>
+                <p>Complementé mi formación con la Diplomatura en Economía Política (UBA · CEPA) y el programa Experto en Project Management (UTN). En 2026 cursé un programa internacional de Administración de Negocios en la Zhongnan University of Economics and Law, en Wuhan, China, con visitas a empresas locales.</p>
+                <p class="langs">Me manejo en español e inglés, y tengo nociones de portugués y mandarín.</p>
+            </div></div>
+        </div>
 
     </section>
 
