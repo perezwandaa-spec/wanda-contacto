@@ -312,7 +312,107 @@ footer p {
         padding-right: 42px;
     }
 }
+
+/* ===== Sobre mí (desplegable) ===== */
+.about-panel{display:grid;grid-template-rows:0fr;transition:grid-template-rows .35s ease}
+.about-panel.open{grid-template-rows:1fr;border-bottom:1px solid var(--border)}
+.about-panel > .about-inner{overflow:hidden}
+.about-body{padding:4px 22px 22px 76px;text-align:left}
+.about-body p{font-size:14.5px;line-height:1.65;color:var(--gray);margin:6px 0 10px}
+.about-body p.langs{font-size:13px;margin-top:14px}
+.action[aria-expanded] .arrow{transition:transform .25s ease}
+.action[aria-expanded="true"] .arrow{transform:rotate(90deg)}
+@media (max-width:480px){.about-body{padding:4px 18px 20px 18px}}
 </style>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "Person",
+ "name": "Wanda Pérez",
+ "alternateName": "Lic. Pérez Wanda",
+ "honorificPrefix": "Lic.",
+ "jobTitle": "International Trade & Global Sourcing Specialist",
+ "description": "Consultora independiente en comercio exterior y global sourcing, con más de 15 años de experiencia en importaciones y desarrollo de proveedores entre Asia, Estados Unidos y América Latina.",
+ "url": "https://wperezcomex.github.io/",
+ "email": "mailto:wperezcomex@gmail.com",
+ "telephone": "+54 9 11 4928 9218",
+ "address": {
+  "@type": "PostalAddress",
+  "addressLocality": "Ciudad Autónoma de Buenos Aires",
+  "addressCountry": "AR"
+ },
+ "alumniOf": [
+  {
+   "@type": "CollegeOrUniversity",
+   "name": "Universidad Nacional de Quilmes"
+  },
+  {
+   "@type": "CollegeOrUniversity",
+   "name": "Universidad de Buenos Aires"
+  },
+  {
+   "@type": "CollegeOrUniversity",
+   "name": "Universidad Tecnológica Nacional"
+  },
+  {
+   "@type": "CollegeOrUniversity",
+   "name": "Zhongnan University of Economics and Law"
+  }
+ ],
+ "hasCredential": [
+  {
+   "@type": "EducationalOccupationalCredential",
+   "credentialCategory": "degree",
+   "name": "Licenciatura en Comercio Internacional",
+   "recognizedBy": {
+    "@type": "CollegeOrUniversity",
+    "name": "Universidad Nacional de Quilmes"
+   }
+  },
+  {
+   "@type": "EducationalOccupationalCredential",
+   "credentialCategory": "certificate",
+   "name": "Diplomatura en Economía Política",
+   "recognizedBy": {
+    "@type": "CollegeOrUniversity",
+    "name": "Universidad de Buenos Aires"
+   }
+  },
+  {
+   "@type": "EducationalOccupationalCredential",
+   "credentialCategory": "certificate",
+   "name": "Experto en Project Management",
+   "recognizedBy": {
+    "@type": "CollegeOrUniversity",
+    "name": "Universidad Tecnológica Nacional"
+   }
+  }
+ ],
+ "knowsAbout": [
+  "Comercio exterior",
+  "Global sourcing",
+  "Procurement internacional",
+  "Importaciones desde China y Asia",
+  "Desarrollo de proveedores",
+  "Clasificación arancelaria",
+  "Logística internacional"
+ ],
+ "knowsLanguage": [
+  "es",
+  "en",
+  "pt",
+  "zh"
+ ],
+ "makesOffer": {
+  "@type": "Offer",
+  "itemOffered": {
+   "@type": "Service",
+   "name": "Consultoría en global sourcing y comercio exterior",
+   "url": "https://wperezcomex.github.io/solicitud.html"
+  }
+ }
+}
+</script>
 </head>
 
 <body>
@@ -391,6 +491,24 @@ footer p {
     <div class="arrow">›</div>
 
 </a>
+        <!-- Sobre mí -->
+        <button class="action" type="button" id="aboutToggle" aria-expanded="false" aria-controls="aboutPanel" onclick="toggleAbout()">
+            <div class="icon">
+                <svg viewBox="0 0 32 32"><circle cx="16" cy="11" r="5"></circle><path d="M6.5 27c1.6-5.5 17.4-5.5 19 0"></path></svg>
+            </div>
+            <div class="action-content">
+                <div class="action-title">Sobre mí</div>
+                <div class="action-detail">Trayectoria y formación</div>
+            </div>
+            <div class="arrow">›</div>
+        </button>
+        <div class="about-panel" id="aboutPanel" role="region" aria-labelledby="aboutToggle">
+            <div class="about-inner"><div class="about-body">
+                <p>Soy Licenciada en Comercio Internacional (Universidad Nacional de Quilmes) y trabajo hace más de 15 años en comercio exterior, procurement y sourcing entre Asia, Estados Unidos y América Latina.</p>
+                <p>Complementé mi formación con la Diplomatura en Economía Política (UBA · CEPA) y el programa Experto en Project Management (UTN). En 2026 cursé un programa internacional de Administración de Negocios en la Zhongnan University of Economics and Law, en Wuhan, China, con visitas a empresas locales.</p>
+                <p class="langs">Me manejo en español e inglés, y tengo nociones de portugués y mandarín.</p>
+            </div></div>
+        </div>
         <!-- WhatsApp -->
         <a
             class="action"
@@ -539,5 +657,8 @@ END:VCARD`;
 }
 </script>
 
+<script>
+function toggleAbout(){var b=document.getElementById("aboutToggle"),p=document.getElementById("aboutPanel");var o=b.getAttribute("aria-expanded")!=="true";b.setAttribute("aria-expanded",o);p.classList.toggle("open",o);}
+</script>
 </body>
 </html>
